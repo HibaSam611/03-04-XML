@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Hiba Samraoui
+Curso: Dam1
+Fecha: 27/03/2025
+Ejercicio: Ejercicio 1
+-->
+<bookreview>
+    <title>Introducción a XML</title>
+    <books>
+        <book>
+            <author>Simon St. Laurent</author>
+            <price>31.98</price>
+            <pages>352</pages>
+            <date>1998/01</date>
+        </book>
+    </books>
+
+    <htmlContent>
+        <![CDATA[
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Book Review</title>
+        </head>
+        <body>
+            <h1>Book Review</h1>
+            <h2>Introducción a XML</h2>
+            <table border="1">
+                <tr align="center">
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Pages</th>
+                    <th>Date</th>
+                </tr>
+                <tr align="left">
+                    <td>Simon St. Laurent</td>
+                    <td>31.98</td>
+                    <td>352</td>
+                    <td>1998/01</td>
+                </tr>
+            </table>
+        </body>
+        </html>
+        ]]>
+    </htmlContent>
+</bookreview>
+
