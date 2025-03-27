@@ -3,46 +3,29 @@
 Nombre: Hiba Samraoui
 Curso: Dam1
 Fecha: 27/03/2025
-Ejercicio: Ejercicio 1
+Ejercicio: Ejercicio 2
 -->
-<bookreview>
-    <title>Introducción a XML</title>
-    <books>
-        <book>
-            <author>Simon St. Laurent</author>
-            <price>31.98</price>
-            <pages>352</pages>
-            <date>1998/01</date>
-        </book>
-    </books>
-
-    <htmlContent>
-        <![CDATA[
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Book Review</title>
-        </head>
-        <body>
-            <h1>Book Review</h1>
-            <h2>Introducción a XML</h2>
-            <table border="1">
-                <tr align="center">
-                    <th>Author</th>
-                    <th>Price</th>
-                    <th>Pages</th>
-                    <th>Date</th>
-                </tr>
-                <tr align="left">
-                    <td>Simon St. Laurent</td>
-                    <td>31.98</td>
-                    <td>352</td>
-                    <td>1998/01</td>
-                </tr>
-            </table>
-        </body>
-        </html>
-        ]]>
-    </htmlContent>
-</bookreview>
-
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:libro="http://example.com/book">
+  <head>
+    <title>Book Review</title>
+  </head>
+  <body>
+    <bookreview>
+      <libro:title>Introducción a XML</libro:title>
+      <table border="1">
+        <tr align="center">
+          <td>Author</td>
+          <td>Price</td>
+          <td>Pages</td>
+          <td>Date</td>
+        </tr>
+        <tr align="left">
+          <td><libro:author>Simon St. Laurent</libro:author></td>
+          <td><libro:price>31.98</libro:price></td>
+          <td><libro:pages>352</libro:pages></td>
+          <td><libro:date>1998/01</libro:date></td>
+        </tr>
+      </table>
+    </bookreview>
+  </body>
+</html>
